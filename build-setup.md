@@ -355,7 +355,7 @@ Pug is an alternative templating language that compiles to html, using whitespac
 const pug = require("pug");
 const string = "p Hello World!" // pug template language
 const html = pug.render(file);
-console.log(html); // <div>Hello World!</div>
+console.log(html); 		// <p>Hello World!</p>
 ```
 
 Our goal is to write Pug in our Svelte files instead of HTML where we can do all the scoped styling and JS goodness. Let's create an `app.svelte` file with this: 
@@ -376,7 +376,6 @@ We need to run it through Svelte to generate JavaScript, not HTML:
 const svelte = require("svelte/compiler");
 const fs = require("fs");
 const file = fs.readFileSync("app.svelte", "utf8");
-// const html = pug.render(file);
 const result = svelte.compile(file);
 console.log(result.js.code); // svelte.compile returns both js and sourcemap
 ```
@@ -404,7 +403,7 @@ function create_fragment(ctx) {
 
         return {
                 c() {
-                        t = text("p Hello World!");
+                        t = text("p Hello World!"); // WRONG
                 },
                 m(target, anchor) {
                         insert(target, t, anchor);

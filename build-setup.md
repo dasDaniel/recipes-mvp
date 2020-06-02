@@ -10,7 +10,7 @@
 - [Using TypeScript with Svelte](#using-typescript-with-svelte)
 - [Using PostCSS/SCSS with Svelte](#using-postcssscss-with-svelte)
 - [Writing Your Own Preprocessors](#writing-your-own-preprocessors)
-- [How to make a pre-processor that makes it possible to use PUG/Jade](#how-to-make-a-pre-processor-that-makes-it-possible-to-use-pugjade)
+- [How to make a pre-processor that makes it possible to use Pug/Jade](#how-to-make-a-pre-processor-that-makes-it-possible-to-use-pugjade)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
